@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="/js/script.js"></script>
+    <title>Update {{ task }}</title>
+  </head>
+  <body>
+    <h5> Edit {{ task }} </h5>
+​
+<form id="update-task-form">
+  <label>Name:</label>
+  <input class="task-tast-input" value={{ task }} />
+  <br />
+​
+  <label>Description:</label>
+  <textarea class="task-details-input">
+    {{ details }}
+  </textarea>
+  <br />
+​
+  <label>Image:</label>
+  <input class="task-image-input" value={{ image }} />
+  <br />
+​
+  <label>is completed:</label>
+  <input class="task-iscompleted-input" value={{ type }} />
+  <br />
+​
+  <input type="hidden" id="task-id-input" value={{ id }} />
+​
+  <button type="submit">Submit</button>
+</form>
+  </body>
+</html>

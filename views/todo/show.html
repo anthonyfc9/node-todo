@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="/js/script.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <a href="/todo/">Back to list</a>
+    <hr />
+
+    <h5>{{ task }}</h5>
+    <img src={{ image }} />
+
+    <p>{{ details }}</p>
+    <hr />
+
+    <a href="/task/{{ id }}/update">Edit task</a>
+    <button id="delete-task" value={{ id }}>DELETE THIS task</button>
+  </body>
+</html>
