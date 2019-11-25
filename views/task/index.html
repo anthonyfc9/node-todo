@@ -6,10 +6,10 @@
   </head>
   <body>
     <h1>all tasks</h1>
-    <a href="/pokemon/new">add a new task</a>
+    <a href="/task/new">add a new task</a>
 
     {{ #task }}
-      <a href="/todo/{{ id }}">
+      <a href="/task/{{ id }}">
         <h3>{{ task }}</h3>
       </a>
     {{ /task }}
