@@ -23,4 +23,8 @@ controller.show = (req, res) => {
     .catch(err => console.log('ERROR:', err));
 };
 
+controller.new = (req, res) => {
+  res.render('task/new');
+};
+
 module.exports = controller;
